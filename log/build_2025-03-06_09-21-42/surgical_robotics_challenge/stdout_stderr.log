@@ -1,0 +1,13 @@
+running develop
+running egg_info
+creating surgical_robotics_challenge.egg-info
+writing surgical_robotics_challenge.egg-info/PKG-INFO
+writing dependency_links to surgical_robotics_challenge.egg-info/dependency_links.txt
+writing top-level names to surgical_robotics_challenge.egg-info/top_level.txt
+writing manifest file 'surgical_robotics_challenge.egg-info/SOURCES.txt'
+reading manifest file 'surgical_robotics_challenge.egg-info/SOURCES.txt'
+writing manifest file 'surgical_robotics_challenge.egg-info/SOURCES.txt'
+running build_ext
+Creating /root/ros2_ws/install/surgical_robotics_challenge/lib/python3.10/site-packages/surgical-robotics-challenge.egg-link (link to .)
+
+Installed /root/ros2_ws/build/surgical_robotics_challenge

@@ -1,0 +1,15 @@
+[1.974s] Invoking command in '/root/ros2_ws/build/surgical_robotics_challenge': PYTHONPATH=/root/ros2_ws/build/surgical_robotics_challenge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/surgical_robotics_challenge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /root/ros2_ws/build/surgical_robotics_challenge/build --no-deps
+[2.330s] running develop
+[2.578s] running egg_info
+[2.579s] creating surgical_robotics_challenge.egg-info
+[2.579s] writing surgical_robotics_challenge.egg-info/PKG-INFO
+[2.579s] writing dependency_links to surgical_robotics_challenge.egg-info/dependency_links.txt
+[2.579s] writing top-level names to surgical_robotics_challenge.egg-info/top_level.txt
+[2.580s] writing manifest file 'surgical_robotics_challenge.egg-info/SOURCES.txt'
+[2.582s] reading manifest file 'surgical_robotics_challenge.egg-info/SOURCES.txt'
+[2.583s] writing manifest file 'surgical_robotics_challenge.egg-info/SOURCES.txt'
+[2.585s] running build_ext
+[2.585s] Creating /root/ros2_ws/install/surgical_robotics_challenge/lib/python3.10/site-packages/surgical-robotics-challenge.egg-link (link to .)
+[2.586s] 
+[2.586s] Installed /root/ros2_ws/build/surgical_robotics_challenge
+[2.632s] Invoked command in '/root/ros2_ws/build/surgical_robotics_challenge' returned '0': PYTHONPATH=/root/ros2_ws/build/surgical_robotics_challenge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/surgical_robotics_challenge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /root/ros2_ws/build/surgical_robotics_challenge/build --no-deps

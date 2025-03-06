@@ -1,0 +1,22 @@
+[2.013s] Invoking command in '/root/ros2_ws/build/ros_tcp_endpoint': PYTHONPATH=/root/ros2_ws/build/ros_tcp_endpoint/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /root/ros2_ws/build/ros_tcp_endpoint/build --no-deps symlink_data --force
+[2.320s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.320s]   warnings.warn(
+[2.378s] running develop
+[2.621s] running egg_info
+[2.621s] writing ros_tcp_endpoint.egg-info/PKG-INFO
+[2.622s] writing dependency_links to ros_tcp_endpoint.egg-info/dependency_links.txt
+[2.622s] writing entry points to ros_tcp_endpoint.egg-info/entry_points.txt
+[2.622s] writing requirements to ros_tcp_endpoint.egg-info/requires.txt
+[2.622s] writing top-level names to ros_tcp_endpoint.egg-info/top_level.txt
+[2.624s] reading manifest file 'ros_tcp_endpoint.egg-info/SOURCES.txt'
+[2.626s] writing manifest file 'ros_tcp_endpoint.egg-info/SOURCES.txt'
+[2.628s] running build_ext
+[2.628s] Creating /root/ros2_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages/ros-tcp-endpoint.egg-link (link to .)
+[2.629s] Installing default_server_endpoint script to /root/ros2_ws/install/ros_tcp_endpoint/lib/ros_tcp_endpoint
+[2.630s] 
+[2.630s] Installed /root/ros2_ws/build/ros_tcp_endpoint
+[2.630s] running symlink_data
+[2.630s] symbolically linking /root/ros2_ws/build/ros_tcp_endpoint/resource/ros_tcp_endpoint -> /root/ros2_ws/install/ros_tcp_endpoint/share/ament_index/resource_index/packages
+[2.631s] symbolically linking /root/ros2_ws/build/ros_tcp_endpoint/package.xml -> /root/ros2_ws/install/ros_tcp_endpoint/share/ros_tcp_endpoint
+[2.631s] symbolically linking /root/ros2_ws/build/ros_tcp_endpoint/launch/endpoint.py -> /root/ros2_ws/install/ros_tcp_endpoint/share/ros_tcp_endpoint/launch
+[2.708s] Invoked command in '/root/ros2_ws/build/ros_tcp_endpoint' returned '0': PYTHONPATH=/root/ros2_ws/build/ros_tcp_endpoint/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /root/ros2_ws/build/ros_tcp_endpoint/build --no-deps symlink_data --force

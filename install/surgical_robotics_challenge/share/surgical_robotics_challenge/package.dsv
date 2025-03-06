@@ -1,0 +1,6 @@
+source;share/surgical_robotics_challenge/hook/pythonpath.ps1
+source;share/surgical_robotics_challenge/hook/pythonpath.dsv
+source;share/surgical_robotics_challenge/hook/pythonpath.sh
+source;../../build/surgical_robotics_challenge/share/surgical_robotics_challenge/hook/pythonpath_develop.ps1
+source;../../build/surgical_robotics_challenge/share/surgical_robotics_challenge/hook/pythonpath_develop.dsv
+source;../../build/surgical_robotics_challenge/share/surgical_robotics_challenge/hook/pythonpath_develop.sh

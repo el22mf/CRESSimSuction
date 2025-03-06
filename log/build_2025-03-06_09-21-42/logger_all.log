@@ -1,0 +1,650 @@
+[1.811s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[1.811s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f83b3f42e90>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f83b3f41e70>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f83b3f41e70>>)
+[2.781s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.781s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.782s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.782s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.782s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.782s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.782s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/ros2_ws'
+[2.782s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.782s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.783s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.783s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.783s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.783s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.783s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.783s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.783s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.814s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.815s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.815s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.815s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.815s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.815s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.816s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.816s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.816s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.816s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.816s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.816s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.817s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.817s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.817s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS-TCP-Endpoint) by extensions ['ignore', 'ignore_ament_install']
+[2.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS-TCP-Endpoint) by extension 'ignore'
+[2.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS-TCP-Endpoint) by extension 'ignore_ament_install'
+[2.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS-TCP-Endpoint) by extensions ['colcon_pkg']
+[2.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS-TCP-Endpoint) by extension 'colcon_pkg'
+[2.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS-TCP-Endpoint) by extensions ['colcon_meta']
+[2.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS-TCP-Endpoint) by extension 'colcon_meta'
+[2.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS-TCP-Endpoint) by extensions ['ros']
+[2.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS-TCP-Endpoint) by extension 'ros'
+[2.823s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ROS-TCP-Endpoint' with type 'ros.ament_python' and name 'ros_tcp_endpoint'
+[2.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge) by extensions ['ignore', 'ignore_ament_install']
+[2.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge) by extension 'ignore'
+[2.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge) by extension 'ignore_ament_install'
+[2.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge) by extensions ['colcon_pkg']
+[2.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge) by extension 'colcon_pkg'
+[2.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge) by extensions ['colcon_meta']
+[2.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge) by extension 'colcon_meta'
+[2.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge) by extensions ['ros']
+[2.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge) by extension 'ros'
+[2.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge) by extensions ['cmake', 'python']
+[2.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge) by extension 'cmake'
+[2.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge) by extension 'python'
+[2.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge) by extensions ['python_setup_py']
+[2.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge) by extension 'python_setup_py'
+[2.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF) by extensions ['ignore', 'ignore_ament_install']
+[2.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF) by extension 'ignore'
+[2.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF) by extension 'ignore_ament_install'
+[2.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF) by extensions ['colcon_pkg']
+[2.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF) by extension 'colcon_pkg'
+[2.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF) by extensions ['colcon_meta']
+[2.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF) by extension 'colcon_meta'
+[2.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF) by extensions ['ros']
+[2.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF) by extension 'ros'
+[2.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF) by extensions ['cmake', 'python']
+[2.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF) by extension 'cmake'
+[2.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF) by extension 'python'
+[2.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF) by extensions ['python_setup_py']
+[2.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF) by extension 'python_setup_py'
+[2.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs) by extensions ['ignore', 'ignore_ament_install']
+[2.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs) by extension 'ignore'
+[2.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs) by extension 'ignore_ament_install'
+[2.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs) by extensions ['colcon_pkg']
+[2.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs) by extension 'colcon_pkg'
+[2.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs) by extensions ['colcon_meta']
+[2.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs) by extension 'colcon_meta'
+[2.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs) by extensions ['ros']
+[2.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs) by extension 'ros'
+[2.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs) by extensions ['cmake', 'python']
+[2.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs) by extension 'cmake'
+[2.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs) by extension 'python'
+[2.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs) by extensions ['python_setup_py']
+[2.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs) by extension 'python_setup_py'
+[2.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE) by extensions ['ignore', 'ignore_ament_install']
+[2.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE) by extension 'ignore'
+[2.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE) by extension 'ignore_ament_install'
+[2.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE) by extensions ['colcon_pkg']
+[2.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE) by extension 'colcon_pkg'
+[2.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE) by extensions ['colcon_meta']
+[2.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE) by extension 'colcon_meta'
+[2.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE) by extensions ['ros']
+[2.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE) by extension 'ros'
+[2.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE) by extensions ['cmake', 'python']
+[2.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE) by extension 'cmake'
+[2.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE) by extension 'python'
+[2.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE) by extensions ['python_setup_py']
+[2.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE) by extension 'python_setup_py'
+[2.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/high_res) by extensions ['ignore', 'ignore_ament_install']
+[2.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/high_res) by extension 'ignore'
+[2.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/high_res) by extension 'ignore_ament_install'
+[2.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/high_res) by extensions ['colcon_pkg']
+[2.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/high_res) by extension 'colcon_pkg'
+[2.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/high_res) by extensions ['colcon_meta']
+[2.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/high_res) by extension 'colcon_meta'
+[2.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/high_res) by extensions ['ros']
+[2.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/high_res) by extension 'ros'
+[2.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/high_res) by extensions ['cmake', 'python']
+[2.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/high_res) by extension 'cmake'
+[2.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/high_res) by extension 'python'
+[2.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/high_res) by extensions ['python_setup_py']
+[2.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/high_res) by extension 'python_setup_py'
+[2.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/low_res) by extensions ['ignore', 'ignore_ament_install']
+[2.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/low_res) by extension 'ignore'
+[2.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/low_res) by extension 'ignore_ament_install'
+[2.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/low_res) by extensions ['colcon_pkg']
+[2.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/low_res) by extension 'colcon_pkg'
+[2.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/low_res) by extensions ['colcon_meta']
+[2.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/low_res) by extension 'colcon_meta'
+[2.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/low_res) by extensions ['ros']
+[2.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/low_res) by extension 'ros'
+[2.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/low_res) by extensions ['cmake', 'python']
+[2.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/low_res) by extension 'cmake'
+[2.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/low_res) by extension 'python'
+[2.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/low_res) by extensions ['python_setup_py']
+[2.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_400006_SIMPLE/low_res) by extension 'python_setup_py'
+[2.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006) by extensions ['ignore', 'ignore_ament_install']
+[2.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006) by extension 'ignore'
+[2.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006) by extension 'ignore_ament_install'
+[2.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006) by extensions ['colcon_pkg']
+[2.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006) by extension 'colcon_pkg'
+[2.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006) by extensions ['colcon_meta']
+[2.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006) by extension 'colcon_meta'
+[2.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006) by extensions ['ros']
+[2.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006) by extension 'ros'
+[2.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006) by extensions ['cmake', 'python']
+[2.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006) by extension 'cmake'
+[2.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006) by extension 'python'
+[2.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006) by extensions ['python_setup_py']
+[2.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006) by extension 'python_setup_py'
+[2.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/high_res) by extensions ['ignore', 'ignore_ament_install']
+[2.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/high_res) by extension 'ignore'
+[2.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/high_res) by extension 'ignore_ament_install'
+[2.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/high_res) by extensions ['colcon_pkg']
+[2.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/high_res) by extension 'colcon_pkg'
+[2.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/high_res) by extensions ['colcon_meta']
+[2.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/high_res) by extension 'colcon_meta'
+[2.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/high_res) by extensions ['ros']
+[2.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/high_res) by extension 'ros'
+[2.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/high_res) by extensions ['cmake', 'python']
+[2.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/high_res) by extension 'cmake'
+[2.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/high_res) by extension 'python'
+[2.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/high_res) by extensions ['python_setup_py']
+[2.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/high_res) by extension 'python_setup_py'
+[2.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/low_res) by extensions ['ignore', 'ignore_ament_install']
+[2.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/low_res) by extension 'ignore'
+[2.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/low_res) by extension 'ignore_ament_install'
+[2.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/low_res) by extensions ['colcon_pkg']
+[2.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/low_res) by extension 'colcon_pkg'
+[2.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/low_res) by extensions ['colcon_meta']
+[2.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/low_res) by extension 'colcon_meta'
+[2.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/low_res) by extensions ['ros']
+[2.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/low_res) by extension 'ros'
+[2.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/low_res) by extensions ['cmake', 'python']
+[2.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/low_res) by extension 'cmake'
+[2.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/low_res) by extension 'python'
+[2.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/low_res) by extensions ['python_setup_py']
+[2.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/PSMs/LND_420006/low_res) by extension 'python_setup_py'
+[2.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms) by extensions ['ignore', 'ignore_ament_install']
+[2.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms) by extension 'ignore'
+[2.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms) by extension 'ignore_ament_install'
+[2.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms) by extensions ['colcon_pkg']
+[2.836s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms) by extension 'colcon_pkg'
+[2.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms) by extensions ['colcon_meta']
+[2.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms) by extension 'colcon_meta'
+[2.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms) by extensions ['ros']
+[2.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms) by extension 'ros'
+[2.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms) by extensions ['cmake', 'python']
+[2.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms) by extension 'cmake'
+[2.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms) by extension 'python'
+[2.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms) by extensions ['python_setup_py']
+[2.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms) by extension 'python_setup_py'
+[2.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED) by extensions ['ignore', 'ignore_ament_install']
+[2.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED) by extension 'ignore'
+[2.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED) by extension 'ignore_ament_install'
+[2.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED) by extensions ['colcon_pkg']
+[2.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED) by extension 'colcon_pkg'
+[2.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED) by extensions ['colcon_meta']
+[2.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED) by extension 'colcon_meta'
+[2.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED) by extensions ['ros']
+[2.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED) by extension 'ros'
+[2.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED) by extensions ['cmake', 'python']
+[2.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED) by extension 'cmake'
+[2.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED) by extension 'python'
+[2.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED) by extensions ['python_setup_py']
+[2.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED) by extension 'python_setup_py'
+[2.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/high_res) by extensions ['ignore', 'ignore_ament_install']
+[2.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/high_res) by extension 'ignore'
+[2.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/high_res) by extension 'ignore_ament_install'
+[2.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/high_res) by extensions ['colcon_pkg']
+[2.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/high_res) by extension 'colcon_pkg'
+[2.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/high_res) by extensions ['colcon_meta']
+[2.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/high_res) by extension 'colcon_meta'
+[2.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/high_res) by extensions ['ros']
+[2.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/high_res) by extension 'ros'
+[2.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/high_res) by extensions ['cmake', 'python']
+[2.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/high_res) by extension 'cmake'
+[2.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/high_res) by extension 'python'
+[2.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/high_res) by extensions ['python_setup_py']
+[2.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/high_res) by extension 'python_setup_py'
+[2.842s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/low_res) by extensions ['ignore', 'ignore_ament_install']
+[2.842s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/low_res) by extension 'ignore'
+[2.842s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/low_res) by extension 'ignore_ament_install'
+[2.842s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/low_res) by extensions ['colcon_pkg']
+[2.842s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/low_res) by extension 'colcon_pkg'
+[2.842s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/low_res) by extensions ['colcon_meta']
+[2.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/low_res) by extension 'colcon_meta'
+[2.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/low_res) by extensions ['ros']
+[2.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/low_res) by extension 'ros'
+[2.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/low_res) by extensions ['cmake', 'python']
+[2.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/low_res) by extension 'cmake'
+[2.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/low_res) by extension 'python'
+[2.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/low_res) by extensions ['python_setup_py']
+[2.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED/low_res) by extension 'python_setup_py'
+[2.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT) by extensions ['ignore', 'ignore_ament_install']
+[2.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT) by extension 'ignore'
+[2.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT) by extension 'ignore_ament_install'
+[2.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT) by extensions ['colcon_pkg']
+[2.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT) by extension 'colcon_pkg'
+[2.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT) by extensions ['colcon_meta']
+[2.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT) by extension 'colcon_meta'
+[2.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT) by extensions ['ros']
+[2.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT) by extension 'ros'
+[2.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT) by extensions ['cmake', 'python']
+[2.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT) by extension 'cmake'
+[2.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT) by extension 'python'
+[2.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT) by extensions ['python_setup_py']
+[2.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT) by extension 'python_setup_py'
+[2.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/high_res) by extensions ['ignore', 'ignore_ament_install']
+[2.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/high_res) by extension 'ignore'
+[2.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/high_res) by extension 'ignore_ament_install'
+[2.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/high_res) by extensions ['colcon_pkg']
+[2.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/high_res) by extension 'colcon_pkg'
+[2.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/high_res) by extensions ['colcon_meta']
+[2.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/high_res) by extension 'colcon_meta'
+[2.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/high_res) by extensions ['ros']
+[2.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/high_res) by extension 'ros'
+[2.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/high_res) by extensions ['cmake', 'python']
+[2.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/high_res) by extension 'cmake'
+[2.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/high_res) by extension 'python'
+[2.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/high_res) by extensions ['python_setup_py']
+[2.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/high_res) by extension 'python_setup_py'
+[2.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/low_res) by extensions ['ignore', 'ignore_ament_install']
+[2.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/low_res) by extension 'ignore'
+[2.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/low_res) by extension 'ignore_ament_install'
+[2.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/low_res) by extensions ['colcon_pkg']
+[2.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/low_res) by extension 'colcon_pkg'
+[2.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/low_res) by extensions ['colcon_meta']
+[2.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/low_res) by extension 'colcon_meta'
+[2.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/low_res) by extensions ['ros']
+[2.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/low_res) by extension 'ros'
+[2.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/low_res) by extensions ['cmake', 'python']
+[2.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/low_res) by extension 'cmake'
+[2.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/low_res) by extension 'python'
+[2.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/low_res) by extensions ['python_setup_py']
+[2.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/3D_MED_STRAIGHT/low_res) by extension 'python_setup_py'
+[2.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple) by extensions ['ignore', 'ignore_ament_install']
+[2.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple) by extension 'ignore'
+[2.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple) by extension 'ignore_ament_install'
+[2.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple) by extensions ['colcon_pkg']
+[2.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple) by extension 'colcon_pkg'
+[2.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple) by extensions ['colcon_meta']
+[2.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple) by extension 'colcon_meta'
+[2.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple) by extensions ['ros']
+[2.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple) by extension 'ros'
+[2.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple) by extensions ['cmake', 'python']
+[2.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple) by extension 'cmake'
+[2.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple) by extension 'python'
+[2.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple) by extensions ['python_setup_py']
+[2.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple) by extension 'python_setup_py'
+[2.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/high_res) by extensions ['ignore', 'ignore_ament_install']
+[2.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/high_res) by extension 'ignore'
+[2.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/high_res) by extension 'ignore_ament_install'
+[2.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/high_res) by extensions ['colcon_pkg']
+[2.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/high_res) by extension 'colcon_pkg'
+[2.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/high_res) by extensions ['colcon_meta']
+[2.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/high_res) by extension 'colcon_meta'
+[2.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/high_res) by extensions ['ros']
+[2.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/high_res) by extension 'ros'
+[2.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/high_res) by extensions ['cmake', 'python']
+[2.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/high_res) by extension 'cmake'
+[2.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/high_res) by extension 'python'
+[2.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/high_res) by extensions ['python_setup_py']
+[2.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/high_res) by extension 'python_setup_py'
+[2.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/low_res) by extensions ['ignore', 'ignore_ament_install']
+[2.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/low_res) by extension 'ignore'
+[2.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/low_res) by extension 'ignore_ament_install'
+[2.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/low_res) by extensions ['colcon_pkg']
+[2.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/low_res) by extension 'colcon_pkg'
+[2.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/low_res) by extensions ['colcon_meta']
+[2.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/low_res) by extension 'colcon_meta'
+[2.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/low_res) by extensions ['ros']
+[2.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/low_res) by extension 'ros'
+[2.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/low_res) by extensions ['cmake', 'python']
+[2.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/low_res) by extension 'cmake'
+[2.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/low_res) by extension 'python'
+[2.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/low_res) by extensions ['python_setup_py']
+[2.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/Phantoms/Simple/low_res) by extension 'python_setup_py'
+[2.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/color) by extensions ['ignore', 'ignore_ament_install']
+[2.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/color) by extension 'ignore'
+[2.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/color) by extension 'ignore_ament_install'
+[2.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/color) by extensions ['colcon_pkg']
+[2.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/color) by extension 'colcon_pkg'
+[2.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/color) by extensions ['colcon_meta']
+[2.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/color) by extension 'colcon_meta'
+[2.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/color) by extensions ['ros']
+[2.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/color) by extension 'ros'
+[2.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/color) by extensions ['cmake', 'python']
+[2.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/color) by extension 'cmake'
+[2.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/color) by extension 'python'
+[2.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/color) by extensions ['python_setup_py']
+[2.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/color) by extension 'python_setup_py'
+[2.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/input_devices) by extensions ['ignore', 'ignore_ament_install']
+[2.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/input_devices) by extension 'ignore'
+[2.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/input_devices) by extension 'ignore_ament_install'
+[2.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/input_devices) by extensions ['colcon_pkg']
+[2.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/input_devices) by extension 'colcon_pkg'
+[2.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/input_devices) by extensions ['colcon_meta']
+[2.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/input_devices) by extension 'colcon_meta'
+[2.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/input_devices) by extensions ['ros']
+[2.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/input_devices) by extension 'ros'
+[2.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/input_devices) by extensions ['cmake', 'python']
+[2.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/input_devices) by extension 'cmake'
+[2.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/input_devices) by extension 'python'
+[2.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/input_devices) by extensions ['python_setup_py']
+[2.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/input_devices) by extension 'python_setup_py'
+[2.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/world) by extensions ['ignore', 'ignore_ament_install']
+[2.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/world) by extension 'ignore'
+[2.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/world) by extension 'ignore_ament_install'
+[2.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/world) by extensions ['colcon_pkg']
+[2.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/world) by extension 'colcon_pkg'
+[2.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/world) by extensions ['colcon_meta']
+[2.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/world) by extension 'colcon_meta'
+[2.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/world) by extensions ['ros']
+[2.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/world) by extension 'ros'
+[2.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/world) by extensions ['cmake', 'python']
+[2.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/world) by extension 'cmake'
+[2.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/world) by extension 'python'
+[2.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/world) by extensions ['python_setup_py']
+[2.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ADF/world) by extension 'python_setup_py'
+[2.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/Media) by extensions ['ignore', 'ignore_ament_install']
+[2.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/Media) by extension 'ignore'
+[2.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/Media) by extension 'ignore_ament_install'
+[2.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/Media) by extensions ['colcon_pkg']
+[2.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/Media) by extension 'colcon_pkg'
+[2.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/Media) by extensions ['colcon_meta']
+[2.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/Media) by extension 'colcon_meta'
+[2.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/Media) by extensions ['ros']
+[2.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/Media) by extension 'ros'
+[2.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/Media) by extensions ['cmake', 'python']
+[2.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/Media) by extension 'cmake'
+[2.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/Media) by extension 'python'
+[2.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/Media) by extensions ['python_setup_py']
+[2.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/Media) by extension 'python_setup_py'
+[2.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/PlotJuggler) by extensions ['ignore', 'ignore_ament_install']
+[2.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/PlotJuggler) by extension 'ignore'
+[2.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/PlotJuggler) by extension 'ignore_ament_install'
+[2.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/PlotJuggler) by extensions ['colcon_pkg']
+[2.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/PlotJuggler) by extension 'colcon_pkg'
+[2.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/PlotJuggler) by extensions ['colcon_meta']
+[2.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/PlotJuggler) by extension 'colcon_meta'
+[2.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/PlotJuggler) by extensions ['ros']
+[2.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/PlotJuggler) by extension 'ros'
+[2.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/PlotJuggler) by extensions ['cmake', 'python']
+[2.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/PlotJuggler) by extension 'cmake'
+[2.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/PlotJuggler) by extension 'python'
+[2.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/PlotJuggler) by extensions ['python_setup_py']
+[2.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/PlotJuggler) by extension 'python_setup_py'
+[2.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders) by extensions ['ignore', 'ignore_ament_install']
+[2.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders) by extension 'ignore'
+[2.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders) by extension 'ignore_ament_install'
+[2.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders) by extensions ['colcon_pkg']
+[2.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders) by extension 'colcon_pkg'
+[2.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders) by extensions ['colcon_meta']
+[2.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders) by extension 'colcon_meta'
+[2.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders) by extensions ['ros']
+[2.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders) by extension 'ros'
+[2.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders) by extensions ['cmake', 'python']
+[2.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders) by extension 'cmake'
+[2.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders) by extension 'python'
+[2.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders) by extensions ['python_setup_py']
+[2.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders) by extension 'python_setup_py'
+[2.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/normal_map) by extensions ['ignore', 'ignore_ament_install']
+[2.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/normal_map) by extension 'ignore'
+[2.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/normal_map) by extension 'ignore_ament_install'
+[2.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/normal_map) by extensions ['colcon_pkg']
+[2.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/normal_map) by extension 'colcon_pkg'
+[2.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/normal_map) by extensions ['colcon_meta']
+[2.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/normal_map) by extension 'colcon_meta'
+[2.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/normal_map) by extensions ['ros']
+[2.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/normal_map) by extension 'ros'
+[2.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/normal_map) by extensions ['cmake', 'python']
+[2.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/normal_map) by extension 'cmake'
+[2.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/normal_map) by extension 'python'
+[2.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/normal_map) by extensions ['python_setup_py']
+[2.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/normal_map) by extension 'python_setup_py'
+[2.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr) by extensions ['ignore', 'ignore_ament_install']
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr) by extension 'ignore'
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr) by extension 'ignore_ament_install'
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr) by extensions ['colcon_pkg']
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr) by extension 'colcon_pkg'
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr) by extensions ['colcon_meta']
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr) by extension 'colcon_meta'
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr) by extensions ['ros']
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr) by extension 'ros'
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr) by extensions ['cmake', 'python']
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr) by extension 'cmake'
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr) by extension 'python'
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr) by extensions ['python_setup_py']
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr) by extension 'python_setup_py'
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr_textured) by extensions ['ignore', 'ignore_ament_install']
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr_textured) by extension 'ignore'
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr_textured) by extension 'ignore_ament_install'
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr_textured) by extensions ['colcon_pkg']
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr_textured) by extension 'colcon_pkg'
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr_textured) by extensions ['colcon_meta']
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr_textured) by extension 'colcon_meta'
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr_textured) by extensions ['ros']
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr_textured) by extension 'ros'
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr_textured) by extensions ['cmake', 'python']
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr_textured) by extension 'cmake'
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr_textured) by extension 'python'
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr_textured) by extensions ['python_setup_py']
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/pbr_textured) by extension 'python_setup_py'
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/preprocessing) by extensions ['ignore', 'ignore_ament_install']
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/preprocessing) by extension 'ignore'
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/preprocessing) by extension 'ignore_ament_install'
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/preprocessing) by extensions ['colcon_pkg']
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/preprocessing) by extension 'colcon_pkg'
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/preprocessing) by extensions ['colcon_meta']
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/preprocessing) by extension 'colcon_meta'
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/preprocessing) by extensions ['ros']
+[2.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/preprocessing) by extension 'ros'
+[2.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/preprocessing) by extensions ['cmake', 'python']
+[2.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/preprocessing) by extension 'cmake'
+[2.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/preprocessing) by extension 'python'
+[2.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/preprocessing) by extensions ['python_setup_py']
+[2.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/ambf_shaders/preprocessing) by extension 'python_setup_py'
+[2.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender) by extensions ['ignore', 'ignore_ament_install']
+[2.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender) by extension 'ignore'
+[2.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender) by extension 'ignore_ament_install'
+[2.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender) by extensions ['colcon_pkg']
+[2.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender) by extension 'colcon_pkg'
+[2.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender) by extensions ['colcon_meta']
+[2.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender) by extension 'colcon_meta'
+[2.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender) by extensions ['ros']
+[2.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender) by extension 'ros'
+[2.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender) by extensions ['cmake', 'python']
+[2.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender) by extension 'cmake'
+[2.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender) by extension 'python'
+[2.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender) by extensions ['python_setup_py']
+[2.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender) by extension 'python_setup_py'
+[2.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender_scripts) by extensions ['ignore', 'ignore_ament_install']
+[2.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender_scripts) by extension 'ignore'
+[2.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender_scripts) by extension 'ignore_ament_install'
+[2.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender_scripts) by extensions ['colcon_pkg']
+[2.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender_scripts) by extension 'colcon_pkg'
+[2.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender_scripts) by extensions ['colcon_meta']
+[2.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender_scripts) by extension 'colcon_meta'
+[2.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender_scripts) by extensions ['ros']
+[2.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender_scripts) by extension 'ros'
+[2.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender_scripts) by extensions ['cmake', 'python']
+[2.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender_scripts) by extension 'cmake'
+[2.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender_scripts) by extension 'python'
+[2.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender_scripts) by extensions ['python_setup_py']
+[2.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/blender_scripts) by extension 'python_setup_py'
+[2.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs) by extensions ['ignore', 'ignore_ament_install']
+[2.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs) by extension 'ignore'
+[2.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs) by extension 'ignore_ament_install'
+[2.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs) by extensions ['colcon_pkg']
+[2.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs) by extension 'colcon_pkg'
+[2.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs) by extensions ['colcon_meta']
+[2.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs) by extension 'colcon_meta'
+[2.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs) by extensions ['ros']
+[2.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs) by extension 'ros'
+[2.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs) by extensions ['cmake', 'python']
+[2.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs) by extension 'cmake'
+[2.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs) by extension 'python'
+[2.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs) by extensions ['python_setup_py']
+[2.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs) by extension 'python_setup_py'
+[2.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs/figures) by extensions ['ignore', 'ignore_ament_install']
+[2.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs/figures) by extension 'ignore'
+[2.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs/figures) by extension 'ignore_ament_install'
+[2.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs/figures) by extensions ['colcon_pkg']
+[2.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs/figures) by extension 'colcon_pkg'
+[2.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs/figures) by extensions ['colcon_meta']
+[2.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs/figures) by extension 'colcon_meta'
+[2.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs/figures) by extensions ['ros']
+[2.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs/figures) by extension 'ros'
+[2.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs/figures) by extensions ['cmake', 'python']
+[2.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs/figures) by extension 'cmake'
+[2.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs/figures) by extension 'python'
+[2.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs/figures) by extensions ['python_setup_py']
+[2.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/docs/figures) by extension 'python_setup_py'
+[2.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/scripts) by extensions ['ignore', 'ignore_ament_install']
+[2.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/scripts) by extension 'ignore'
+[2.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/scripts) by extension 'ignore_ament_install'
+[2.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/scripts) by extensions ['colcon_pkg']
+[2.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/scripts) by extension 'colcon_pkg'
+[2.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/scripts) by extensions ['colcon_meta']
+[2.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/scripts) by extension 'colcon_meta'
+[2.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/scripts) by extensions ['ros']
+[2.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/scripts) by extension 'ros'
+[2.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/scripts) by extensions ['cmake', 'python']
+[2.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/scripts) by extension 'cmake'
+[2.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/scripts) by extension 'python'
+[2.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/scripts) by extensions ['python_setup_py']
+[2.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/surgical_robotics_challenge/scripts) by extension 'python_setup_py'
+[3.387s] DEBUG:colcon.colcon_core.package_identification:Package 'src/surgical_robotics_challenge/scripts' with type 'python' and name 'surgical_robotics_challenge'
+[3.387s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.387s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.387s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.387s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.387s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.443s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[3.443s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[3.452s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 271 installed packages in /opt/ros/humble
+[3.472s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[3.548s] Level 5:colcon.colcon_core.verb:set package 'ros_tcp_endpoint' build argument 'cmake_args' from command line to 'None'
+[3.548s] Level 5:colcon.colcon_core.verb:set package 'ros_tcp_endpoint' build argument 'cmake_target' from command line to 'None'
+[3.548s] Level 5:colcon.colcon_core.verb:set package 'ros_tcp_endpoint' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.548s] Level 5:colcon.colcon_core.verb:set package 'ros_tcp_endpoint' build argument 'cmake_clean_cache' from command line to 'False'
+[3.548s] Level 5:colcon.colcon_core.verb:set package 'ros_tcp_endpoint' build argument 'cmake_clean_first' from command line to 'False'
+[3.548s] Level 5:colcon.colcon_core.verb:set package 'ros_tcp_endpoint' build argument 'cmake_force_configure' from command line to 'False'
+[3.548s] Level 5:colcon.colcon_core.verb:set package 'ros_tcp_endpoint' build argument 'ament_cmake_args' from command line to 'None'
+[3.548s] Level 5:colcon.colcon_core.verb:set package 'ros_tcp_endpoint' build argument 'catkin_cmake_args' from command line to 'None'
+[3.548s] Level 5:colcon.colcon_core.verb:set package 'ros_tcp_endpoint' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.548s] DEBUG:colcon.colcon_core.verb:Building package 'ros_tcp_endpoint' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros2_ws/build/ros_tcp_endpoint', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros2_ws/install/ros_tcp_endpoint', 'merge_install': False, 'path': '/root/ros2_ws/src/ROS-TCP-Endpoint', 'symlink_install': True, 'test_result_base': None}
+[3.549s] Level 5:colcon.colcon_core.verb:set package 'surgical_robotics_challenge' build argument 'cmake_args' from command line to 'None'
+[3.549s] Level 5:colcon.colcon_core.verb:set package 'surgical_robotics_challenge' build argument 'cmake_target' from command line to 'None'
+[3.549s] Level 5:colcon.colcon_core.verb:set package 'surgical_robotics_challenge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.549s] Level 5:colcon.colcon_core.verb:set package 'surgical_robotics_challenge' build argument 'cmake_clean_cache' from command line to 'False'
+[3.549s] Level 5:colcon.colcon_core.verb:set package 'surgical_robotics_challenge' build argument 'cmake_clean_first' from command line to 'False'
+[3.549s] Level 5:colcon.colcon_core.verb:set package 'surgical_robotics_challenge' build argument 'cmake_force_configure' from command line to 'False'
+[3.549s] Level 5:colcon.colcon_core.verb:set package 'surgical_robotics_challenge' build argument 'ament_cmake_args' from command line to 'None'
+[3.549s] Level 5:colcon.colcon_core.verb:set package 'surgical_robotics_challenge' build argument 'catkin_cmake_args' from command line to 'None'
+[3.549s] Level 5:colcon.colcon_core.verb:set package 'surgical_robotics_challenge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.549s] DEBUG:colcon.colcon_core.verb:Building package 'surgical_robotics_challenge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros2_ws/build/surgical_robotics_challenge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros2_ws/install/surgical_robotics_challenge', 'merge_install': False, 'path': '/root/ros2_ws/src/surgical_robotics_challenge/scripts', 'symlink_install': True, 'test_result_base': None}
+[3.549s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.552s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.552s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/root/ros2_ws/src/ROS-TCP-Endpoint' with build type 'ament_python'
+[3.553s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_tcp_endpoint', 'ament_prefix_path')
+[3.570s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.571s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/ros_tcp_endpoint/share/ros_tcp_endpoint/hook/ament_prefix_path.ps1'
+[3.573s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/ros_tcp_endpoint/share/ros_tcp_endpoint/hook/ament_prefix_path.dsv'
+[3.574s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/ros_tcp_endpoint/share/ros_tcp_endpoint/hook/ament_prefix_path.sh'
+[3.576s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.576s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.585s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/root/ros2_ws/src/surgical_robotics_challenge/scripts'
+[3.586s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.587s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.029s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/root/ros2_ws/src/ROS-TCP-Endpoint'
+[4.029s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.030s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.061s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/build/surgical_robotics_challenge': PYTHONPATH=/root/ros2_ws/build/surgical_robotics_challenge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/surgical_robotics_challenge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /root/ros2_ws/build/surgical_robotics_challenge/build --no-deps
+[5.063s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /root/ros2_ws/install/ros_tcp_endpoint/share/ament_index/resource_index/packages/ros_tcp_endpoint
+[5.063s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /root/ros2_ws/install/ros_tcp_endpoint/share/ros_tcp_endpoint/package.xml
+[5.063s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /root/ros2_ws/install/ros_tcp_endpoint/share/ros_tcp_endpoint/launch/endpoint.py
+[5.063s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /root/ros2_ws/install/ros_tcp_endpoint/lib/ros_tcp_endpoint/default_server_endpoint
+[5.068s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/build/ros_tcp_endpoint': PYTHONPATH=/root/ros2_ws/build/ros_tcp_endpoint/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /root/ros2_ws/build/ros_tcp_endpoint/build --no-deps symlink_data --force
+[5.717s] Level 1:colcon.colcon_core.shell:create_environment_hook('surgical_robotics_challenge', 'pythonpath_develop')
+[5.718s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/build/surgical_robotics_challenge' returned '0': PYTHONPATH=/root/ros2_ws/build/surgical_robotics_challenge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/surgical_robotics_challenge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /root/ros2_ws/build/surgical_robotics_challenge/build --no-deps
+[5.718s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/build/surgical_robotics_challenge/share/surgical_robotics_challenge/hook/pythonpath_develop.ps1'
+[5.720s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/build/surgical_robotics_challenge/share/surgical_robotics_challenge/hook/pythonpath_develop.dsv'
+[5.721s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/build/surgical_robotics_challenge/share/surgical_robotics_challenge/hook/pythonpath_develop.sh'
+[5.742s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/surgical_robotics_challenge' for CMake module files
+[5.742s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/surgical_robotics_challenge' for CMake config files
+[5.743s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/surgical_robotics_challenge/lib'
+[5.743s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/surgical_robotics_challenge/bin'
+[5.743s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/surgical_robotics_challenge/lib/pkgconfig/surgical_robotics_challenge.pc'
+[5.743s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/surgical_robotics_challenge/lib/python3.10/site-packages'
+[5.743s] Level 1:colcon.colcon_core.shell:create_environment_hook('surgical_robotics_challenge', 'pythonpath')
+[5.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/surgical_robotics_challenge/share/surgical_robotics_challenge/hook/pythonpath.ps1'
+[5.745s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/surgical_robotics_challenge/share/surgical_robotics_challenge/hook/pythonpath.dsv'
+[5.746s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/surgical_robotics_challenge/share/surgical_robotics_challenge/hook/pythonpath.sh'
+[5.747s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/surgical_robotics_challenge/bin'
+[5.748s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(surgical_robotics_challenge)
+[5.748s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/surgical_robotics_challenge/share/surgical_robotics_challenge/package.ps1'
+[5.750s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/install/surgical_robotics_challenge/share/surgical_robotics_challenge/package.dsv'
+[5.752s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/surgical_robotics_challenge/share/surgical_robotics_challenge/package.sh'
+[5.754s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/surgical_robotics_challenge/share/surgical_robotics_challenge/package.bash'
+[5.756s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/surgical_robotics_challenge/share/surgical_robotics_challenge/package.zsh'
+[5.758s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/install/surgical_robotics_challenge/share/colcon-core/packages/surgical_robotics_challenge)
+[5.761s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_tcp_endpoint', 'pythonpath_develop')
+[5.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/build/ros_tcp_endpoint/share/ros_tcp_endpoint/hook/pythonpath_develop.ps1'
+[5.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/build/ros_tcp_endpoint' returned '0': PYTHONPATH=/root/ros2_ws/build/ros_tcp_endpoint/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /root/ros2_ws/build/ros_tcp_endpoint/build --no-deps symlink_data --force
+[5.763s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/build/ros_tcp_endpoint/share/ros_tcp_endpoint/hook/pythonpath_develop.dsv'
+[5.764s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/build/ros_tcp_endpoint/share/ros_tcp_endpoint/hook/pythonpath_develop.sh'
+[5.764s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/ros_tcp_endpoint' for CMake module files
+[5.765s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/ros_tcp_endpoint' for CMake config files
+[5.766s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/ros_tcp_endpoint/lib'
+[5.766s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/ros_tcp_endpoint/bin'
+[5.766s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/ros_tcp_endpoint/lib/pkgconfig/ros_tcp_endpoint.pc'
+[5.766s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages'
+[5.766s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_tcp_endpoint', 'pythonpath')
+[5.766s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/ros_tcp_endpoint/share/ros_tcp_endpoint/hook/pythonpath.ps1'
+[5.767s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/ros_tcp_endpoint/share/ros_tcp_endpoint/hook/pythonpath.dsv'
+[5.767s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/ros_tcp_endpoint/share/ros_tcp_endpoint/hook/pythonpath.sh'
+[5.768s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/ros_tcp_endpoint/bin'
+[5.768s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros_tcp_endpoint)
+[5.768s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/ros_tcp_endpoint/share/ros_tcp_endpoint/package.ps1'
+[5.769s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/install/ros_tcp_endpoint/share/ros_tcp_endpoint/package.dsv'
+[5.770s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/ros_tcp_endpoint/share/ros_tcp_endpoint/package.sh'
+[5.770s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/ros_tcp_endpoint/share/ros_tcp_endpoint/package.bash'
+[5.771s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/ros_tcp_endpoint/share/ros_tcp_endpoint/package.zsh'
+[5.772s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/install/ros_tcp_endpoint/share/colcon-core/packages/ros_tcp_endpoint)
+[5.772s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.774s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.774s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.774s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.222s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[6.222s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.222s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.222s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.223s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/0/bus: No such file or directory
+[6.223s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.223s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros2_ws/install/local_setup.ps1'
+[6.226s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/ros2_ws/install/_local_setup_util_ps1.py'
+[6.229s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros2_ws/install/setup.ps1'
+[6.230s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros2_ws/install/local_setup.sh'
+[6.232s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/ros2_ws/install/_local_setup_util_sh.py'
+[6.233s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros2_ws/install/setup.sh'
+[6.235s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros2_ws/install/local_setup.bash'
+[6.237s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros2_ws/install/setup.bash'
+[6.239s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros2_ws/install/local_setup.zsh'
+[6.243s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros2_ws/install/setup.zsh'
