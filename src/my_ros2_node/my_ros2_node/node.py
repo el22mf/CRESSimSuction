@@ -10,6 +10,8 @@ import math
 from PyKDL import Rotation
 from surgical_robotics_challenge.units_conversion import *
 
+SimToSI = 0.05
+
 class RobotData:
     def __init__(self):
         self.measured_js = JointState()
@@ -21,12 +23,11 @@ class SurChalCrtkTestNode(Node):
         self.robData = RobotData()
 
         # Setup topic names (adjust as needed)
-        namespace = "/CRTK/"
-        arm_name   = "psm1"
-        measured_js_topic = namespace + arm_name + "/measured_js"
-        measured_cp_topic = namespace + arm_name + "/measured_cp"
-        self.servo_jp_topic = namespace + arm_name + "/servo_jp"
-        self.servo_cp_topic = namespace + arm_name + "/servo_cp"
+        arm_name   = "PSM1"
+        measured_js_topic =  arm_name + "/measured_js"
+        measured_cp_topic = arm_name + "/measured_cp"
+        self.servo_jp_topic = arm_name + "/servo_jp"
+        self.servo_cp_topic = arm_name + "/servo_cp"
 
         # Create subscriptions
         self.create_subscription(JointState, measured_js_topic, self.measured_js_cb, 10)
@@ -38,13 +39,13 @@ class SurChalCrtkTestNode(Node):
 
         # Initialize messages to publish
         self.servo_jp_msg = JointState()
-        self.servo_jp_msg.position = [0., 0., 0.1 * SimToSI.linear_factor, 0., 0., 0.]
+        self.servo_jp_msg.position = [0., 0., 0.1 * SimToSI, 0., 0., 0.]
 
         self.servo_cp_msg = PoseStamped()
-        self.servo_cp_msg.pose.position.x = 0.0 * SimToSI.linear_factor
-        self.servo_cp_msg.pose.position.y = 0.0 * SimToSI.linear_factor
-        self.servo_cp_msg.pose.position.z = -0.1 * SimToSI.linear_factor
-        R_7_0 = Rotation.RPY(3.14, 0.0, 1.57079)
+        self.servo_cp_msg.pose.position.x = 0.0 * SimToSI
+        self.servo_cp_msg.pose.position.y = 0.0 * SimToSI
+        self.servo_cp_msg.pose.position.z = -0.1 * SimToSI
+        R_7_0 = Rotation.RPY(-1.57079, 0.0, 1.57079)
         quat = R_7_0.GetQuaternion()
         self.servo_cp_msg.pose.orientation.x = quat[0]
         self.servo_cp_msg.pose.orientation.y = quat[1]
@@ -80,7 +81,7 @@ class SurChalCrtkTestNode(Node):
 
     def timer_callback(self):
         # Get current time in seconds
-        current_time = self.get_clock().now().seconds_nanoseconds()[0]
+        current_time = self.get_clock().now().nanoseconds / 1e9
         if self.mode == 1:
             print("measured_js: ", self.robData.measured_js)
             print("------------------------------------")
@@ -92,8 +93,8 @@ class SurChalCrtkTestNode(Node):
             self.servo_jp_pub.publish(self.servo_jp_msg)
         elif self.mode == 3:
             # Update Cartesian target in a sinusoidal pattern
-            self.servo_cp_msg.pose.position.x = 0.02 * SimToSI.linear_factor * math.sin(current_time)
-            self.servo_cp_msg.pose.position.y = 0.02 * SimToSI.linear_factor * math.cos(current_time)
+            self.servo_cp_msg.pose.position.x = 0.02 * SimToSI * math.sin(current_time)
+            self.servo_cp_msg.pose.position.y = 0.02 * SimToSI * math.cos(current_time)
             self.servo_cp_pub.publish(self.servo_cp_msg)
 
 def main(args=None):

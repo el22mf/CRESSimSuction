@@ -1,8 +1,8 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped
-from sensor_msgs.msg import JointState
 from PyKDL import Rotation
+import threading
 
 SimToSI = 0.05  # Simulation to SI conversion factor
 
@@ -33,36 +33,43 @@ class SurChalCrtkTestNode(Node):
         self.servo_cp_msg.pose.orientation.z = quat[2]
         self.servo_cp_msg.pose.orientation.w = quat[3]
 
-        valid_key = False
-        while not valid_key:
-            try:
-                key = int(input("Press: \n"
-                                "1 - Move along X axis, \n"
-                                "2 - Move along Y axis, \n"
-                                "3 - Move along Z axis \n"))
-            except ValueError:
-                key = None
-            if key in [1, 2, 3]:
-                valid_key = True
-                self.mode = key
-                self.target_value = float(input("Enter target position value: "))
-            else:
-                print("Invalid Entry")
-
         self.timer = self.create_timer(0.02, self.timer_callback)
+        self.user_input_thread = threading.Thread(target=self.user_input_loop, daemon=True)
+        self.user_input_thread.start()
 
     def measured_cp_cb(self, msg):
         self.robData.measured_cp = msg
 
     def timer_callback(self):
-        if self.mode == 1:
-            self.servo_cp_msg.pose.position.x = self.target_value * SimToSI
-        elif self.mode == 2:
-            self.servo_cp_msg.pose.position.y = self.target_value * SimToSI
-        elif self.mode == 3:
-            self.servo_cp_msg.pose.position.z = self.target_value * SimToSI
-
         self.servo_cp_pub.publish(self.servo_cp_msg)
+
+    def user_input_loop(self):
+        while rclpy.ok():
+            print("Current Position:")
+            print(f"  X: {self.servo_cp_msg.pose.position.x / SimToSI}")
+            print(f"  Y: {self.servo_cp_msg.pose.position.y / SimToSI}")
+            print(f"  Z: {self.servo_cp_msg.pose.position.z / SimToSI}")
+
+            try:
+                key = int(input("Press: \n"
+                                "1 - Move along X axis, \n"
+                                "2 - Move along Y axis, \n"
+                                "3 - Move along Z axis, \n"
+                                "0 - Exit\n"))
+                if key == 0:
+                    break
+                if key in [1, 2, 3]:
+                    target_value = float(input("Enter target position value: "))
+                    if key == 1:
+                        self.servo_cp_msg.pose.position.x = target_value * SimToSI
+                    elif key == 2:
+                        self.servo_cp_msg.pose.position.y = target_value * SimToSI
+                    elif key == 3:
+                        self.servo_cp_msg.pose.position.z = target_value * SimToSI
+                else:
+                    print("Invalid Entry")
+            except ValueError:
+                print("Invalid input. Please enter a number.")
 
 
 def main(args=None):
