@@ -21,7 +21,10 @@ setup(
     entry_points={
         'console_scripts': [
             'fleshbox_navigator = fleshbox_vision.fleshbox_navigator:main',
-            'blood_detection = fleshbox_vision.blood_detection:main'
+            'blood_detection = fleshbox_vision.blood_detection:main',
+            'stereo_depth = fleshbox_vision.stereo_depth:main',
+            'disparity_viewer = fleshbox_vision.disparity_viewer:main'
+
         ],
     },
 )
